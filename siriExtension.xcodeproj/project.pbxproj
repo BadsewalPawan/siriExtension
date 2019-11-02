@@ -7,14 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		306A47E122E9D60900195751 /* switchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F305722E99633006D40C6 /* switchController.swift */; };
+		306A47E222E9DEA500195751 /* siriIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F305422E99188006D40C6 /* siriIntentHandler.swift */; };
+		306F305122E977DB006D40C6 /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F305022E977DB006D40C6 /* BlueVC.swift */; };
+		306F305322E97EFF006D40C6 /* YellowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F305222E97EFF006D40C6 /* YellowVC.swift */; };
+		306F305622E9918B006D40C6 /* siriIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F305422E99188006D40C6 /* siriIntentHandler.swift */; };
+		306F305922E9963A006D40C6 /* switchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F305722E99633006D40C6 /* switchController.swift */; };
+		306F305A22E9AA72006D40C6 /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FA0722E7348B001E423D /* SiriIntents.intentdefinition */; };
 		30B2F9D022E72D1A001E423D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2F9CF22E72D1A001E423D /* AppDelegate.swift */; };
 		30B2F9D222E72D1A001E423D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2F9D122E72D1A001E423D /* ViewController.swift */; };
 		30B2F9D522E72D1A001E423D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B2F9D322E72D1A001E423D /* Main.storyboard */; };
 		30B2F9D722E72D1B001E423D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B2F9D622E72D1B001E423D /* Assets.xcassets */; };
 		30B2F9DA22E72D1B001E423D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B2F9D822E72D1B001E423D /* LaunchScreen.storyboard */; };
+		30B2F9E922E72D66001E423D /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2F9E822E72D66001E423D /* IntentHandler.swift */; };
+		30B2F9FF22E72D66001E423D /* intentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 30B2F9E622E72D66001E423D /* intentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		30B2FA0822E7348B001E423D /* SiriIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 30B2FA0722E7348B001E423D /* SiriIntents.intentdefinition */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		30B2F9FD22E72D66001E423D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30B2F9C422E72D1A001E423D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30B2F9E522E72D66001E423D;
+			remoteInfo = intentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30B2FA0622E72D66001E423D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				30B2F9FF22E72D66001E423D /* intentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		306F305022E977DB006D40C6 /* BlueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
+		306F305222E97EFF006D40C6 /* YellowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowVC.swift; sourceTree = "<group>"; };
+		306F305422E99188006D40C6 /* siriIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siriIntentHandler.swift; sourceTree = "<group>"; };
+		306F305722E99633006D40C6 /* switchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = switchController.swift; sourceTree = "<group>"; };
 		30B2F9CC22E72D1A001E423D /* siriExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siriExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B2F9CF22E72D1A001E423D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B2F9D122E72D1A001E423D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,10 +60,23 @@
 		30B2F9D622E72D1B001E423D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30B2F9D922E72D1B001E423D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30B2F9DB22E72D1B001E423D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B2F9E122E72D2B001E423D /* siriExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = siriExtension.entitlements; sourceTree = "<group>"; };
+		30B2F9E622E72D66001E423D /* intentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = intentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B2F9E822E72D66001E423D /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		30B2F9EA22E72D66001E423D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B2F9F122E72D66001E423D /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		30B2FA0722E7348B001E423D /* SiriIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SiriIntents.intentdefinition; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		30B2F9C922E72D1A001E423D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B2F9E322E72D66001E423D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +89,10 @@
 		30B2F9C322E72D1A001E423D = {
 			isa = PBXGroup;
 			children = (
+				306F305222E97EFF006D40C6 /* YellowVC.swift */,
 				30B2F9CE22E72D1A001E423D /* siriExtension */,
+				30B2F9E722E72D66001E423D /* intentExtension */,
+				30B2F9F022E72D66001E423D /* Frameworks */,
 				30B2F9CD22E72D1A001E423D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				30B2F9CC22E72D1A001E423D /* siriExtension.app */,
+				30B2F9E622E72D66001E423D /* intentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,7 +109,9 @@
 		30B2F9CE22E72D1A001E423D /* siriExtension */ = {
 			isa = PBXGroup;
 			children = (
+				30B2F9E122E72D2B001E423D /* siriExtension.entitlements */,
 				30B2F9CF22E72D1A001E423D /* AppDelegate.swift */,
+				306F305022E977DB006D40C6 /* BlueVC.swift */,
 				30B2F9D122E72D1A001E423D /* ViewController.swift */,
 				30B2F9D322E72D1A001E423D /* Main.storyboard */,
 				30B2F9D622E72D1B001E423D /* Assets.xcassets */,
@@ -62,6 +119,26 @@
 				30B2F9DB22E72D1B001E423D /* Info.plist */,
 			);
 			path = siriExtension;
+			sourceTree = "<group>";
+		};
+		30B2F9E722E72D66001E423D /* intentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				306F305722E99633006D40C6 /* switchController.swift */,
+				30B2F9E822E72D66001E423D /* IntentHandler.swift */,
+				306F305422E99188006D40C6 /* siriIntentHandler.swift */,
+				30B2FA0722E7348B001E423D /* SiriIntents.intentdefinition */,
+				30B2F9EA22E72D66001E423D /* Info.plist */,
+			);
+			path = intentExtension;
+			sourceTree = "<group>";
+		};
+		30B2F9F022E72D66001E423D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30B2F9F122E72D66001E423D /* IntentsUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +151,34 @@
 				30B2F9C822E72D1A001E423D /* Sources */,
 				30B2F9C922E72D1A001E423D /* Frameworks */,
 				30B2F9CA22E72D1A001E423D /* Resources */,
+				30B2FA0622E72D66001E423D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				30B2F9FE22E72D66001E423D /* PBXTargetDependency */,
 			);
 			name = siriExtension;
 			productName = siriExtension;
 			productReference = 30B2F9CC22E72D1A001E423D /* siriExtension.app */;
 			productType = "com.apple.product-type.application";
+		};
+		30B2F9E522E72D66001E423D /* intentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30B2FA0322E72D66001E423D /* Build configuration list for PBXNativeTarget "intentExtension" */;
+			buildPhases = (
+				30B2F9E222E72D66001E423D /* Sources */,
+				30B2F9E322E72D66001E423D /* Frameworks */,
+				30B2F9E422E72D66001E423D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = intentExtension;
+			productName = intentExtension;
+			productReference = 30B2F9E622E72D66001E423D /* intentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +191,14 @@
 				ORGANIZATIONNAME = "Pawan Badsewal";
 				TargetAttributes = {
 					30B2F9CB22E72D1A001E423D = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					30B2F9E522E72D66001E423D = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -113,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				30B2F9CB22E72D1A001E423D /* siriExtension */,
+				30B2F9E522E72D66001E423D /* intentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +233,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30B2F9E422E72D66001E423D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,11 +248,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				30B2F9D222E72D1A001E423D /* ViewController.swift in Sources */,
+				306A47E122E9D60900195751 /* switchController.swift in Sources */,
+				306F305A22E9AA72006D40C6 /* SiriIntents.intentdefinition in Sources */,
 				30B2F9D022E72D1A001E423D /* AppDelegate.swift in Sources */,
+				306A47E222E9DEA500195751 /* siriIntentHandler.swift in Sources */,
+				306F305322E97EFF006D40C6 /* YellowVC.swift in Sources */,
+				306F305122E977DB006D40C6 /* BlueVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B2F9E222E72D66001E423D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B2F9E922E72D66001E423D /* IntentHandler.swift in Sources */,
+				30B2FA0822E7348B001E423D /* SiriIntents.intentdefinition in Sources */,
+				306F305622E9918B006D40C6 /* siriIntentHandler.swift in Sources */,
+				306F305922E9963A006D40C6 /* switchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30B2F9FE22E72D66001E423D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30B2F9E522E72D66001E423D /* intentExtension */;
+			targetProxy = 30B2F9FD22E72D66001E423D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		30B2F9D322E72D1A001E423D /* Main.storyboard */ = {
@@ -281,7 +417,9 @@
 		30B2F9DF22E72D1B001E423D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = siriExtension/siriExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GY622E6NGC;
 				INFOPLIST_FILE = siriExtension/Info.plist;
@@ -299,7 +437,9 @@
 		30B2F9E022E72D1B001E423D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = siriExtension/siriExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GY622E6NGC;
 				INFOPLIST_FILE = siriExtension/Info.plist;
@@ -309,6 +449,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmbverve.siriExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30B2FA0422E72D66001E423D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GY622E6NGC;
+				INFOPLIST_FILE = intentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmbverve.siriExtension.intentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30B2FA0522E72D66001E423D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GY622E6NGC;
+				INFOPLIST_FILE = intentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmbverve.siriExtension.intentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +509,15 @@
 			buildConfigurations = (
 				30B2F9DF22E72D1B001E423D /* Debug */,
 				30B2F9E022E72D1B001E423D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30B2FA0322E72D66001E423D /* Build configuration list for PBXNativeTarget "intentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B2FA0422E72D66001E423D /* Debug */,
+				30B2FA0522E72D66001E423D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

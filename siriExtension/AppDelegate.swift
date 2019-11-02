@@ -13,7 +13,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+/*
+    public func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        if userActivity.activityType == redPageActivityType {
+            print("open red page")
+            return true
+        }else if userActivity.activityType == bluePageActivityType {
+            print("open blue page")
+            return true
+        }else if userActivity.activityType == yellowPageActivityType {
+            print("open yellow page")
+            return true
+        }
+        return false
+    }
+    */
+    
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        NotificationCenter.default.post(name: NSNotification.Name("userUpdate"), object: self, userInfo: ["name": "Jim"])
+        return true
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
